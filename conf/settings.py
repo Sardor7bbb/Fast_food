@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     'pages',
     'products',
-
+    'reservations',
 
 
 ]
@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'conf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "fast_food",
+        "USER": "postgres",
+        "PASSWORD": "4868",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
